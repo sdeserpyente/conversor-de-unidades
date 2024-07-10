@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>velocidad</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <form id="conversionForm">
+            <label for="inputValue">Valor:</label>
+            <input type="number" id="inputValue" name="inputValue" required>
+            
+            <label for="inputUnit">Unidad de entrada:</label>
+            <select id="inputUnit" name="inputUnit" required>
+                <option value="mps">Metros por segundo (m/s)</option>
+                <option value="kph">Kilómetros por hora (km/h)</option>
+                <option value="mph">Millas por hora (mph)</option>
+                <option value="fps">Pies por segundo (ft/s)</option>
+            </select>
+
+            <label for="outputUnit">Unidad de salida:</label>
+            <select id="outputUnit" name="outputUnit" required>
+                <option value="mps">Metros por segundo (m/s)</option>
+                <option value="kph">Kilómetros por hora (km/h)</option>
+                <option value="mph">Millas por hora (mph)</option>
+                <option value="fps">Pies por segundo (ft/s)</option>
+            </select>
+
+            <button type="button" onclick="convertir_v()">Convertir</button>
+        </form>
+
+        <h2>Resultado: <span id="result"></span></h2>
+
+        <button onclick="regresar()">Regresar a la Página Principal</button>
+    </div>    
+        
+</body>
+</html>
